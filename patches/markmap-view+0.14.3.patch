@@ -1,0 +1,13 @@
+diff --git a/node_modules/markmap-view/dist/index.esm.js b/node_modules/markmap-view/dist/index.esm.js
+index ee3f39b..8e7853a 100644
+--- a/node_modules/markmap-view/dist/index.esm.js
++++ b/node_modules/markmap-view/dist/index.esm.js
+@@ -1279,7 +1279,7 @@ class Markmap {
+       return (_d$data$payload2 = d.data.payload) != null && _d$data$payload2.fold && d.data.children ? color(d.data) : '#fff';
+     });
+     const foreignObject = nodeMerge.selectAll(childSelector('foreignObject')).data(d => [d], d => d.data.state.key).join(enter => {
+-      const fo = enter.append('foreignObject').attr('class', 'markmap-foreign').attr('x', paddingX).attr('y', 0).style('opacity', 0).on('mousedown', stopPropagation).on('dblclick', stopPropagation);
++      const fo = enter.append('foreignObject').attr('class', 'markmap-foreign').attr('id','W01').attr('x', paddingX).attr('y', 0).style('opacity', 0).on('mousedown', stopPropagation).on('dblclick', stopPropagation);
+       fo.append('xhtml:div').select(function select(d) {
+         const clone = d.data.state.el.cloneNode(true);
+         this.replaceWith(clone);
